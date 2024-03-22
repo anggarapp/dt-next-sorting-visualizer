@@ -39,3 +39,17 @@ body {
 .changed-line-color {
   background-color: theme("colors.system.orange500")
 }
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  },
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse-animation {
+  animation: pulse is cubic-bezier(0.4,0,0.6,1) infinite;
+}
